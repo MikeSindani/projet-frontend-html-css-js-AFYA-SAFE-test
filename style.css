@@ -1,0 +1,114 @@
+
+.container-main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 500px 50px;
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav .logo {
+    margin: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+    color: var(--primary-color);
+}
+nav .links ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+}
+nav .links ul li {
+    margin: 15px; 
+}
+nav .links ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+nav .links ul li .Home{
+    color: var(--primary-color) ;
+}
+nav .links ul li .Contact{
+    color: white;
+    background-color: var(--primary-color);
+    padding: 5px 45px;
+    margin: 0 15px;
+    border-radius: 25px;
+
+}
+nav ul:hover li:not(:hover){
+    opacity: 0.5;
+}
+
+
+article{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article .logo{
+    font-size: 7rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px #00000069;
+}
+article .article .logo{
+    font-size: 7rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px #00000069;
+}article .logo-about{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px #00000069;
+    text-align: center;
+    align-items: center;
+}
+article .presentation{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+article .titre-article{
+    color: var(--primary-color);
+}
+
+section{
+    background-color: white;
+    width: 900px;
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-column-gap: 50px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.section-about{
+    grid-template-columns: 400px 200px !important;
+}
+section .text-article h1{
+    font-size: 2rem;
+    font-weight: 800;
+
+}
+section .img  {
+    display: flex;
+    place-content: center;
+}
+section .img > img {
+    border-radius: 50%;
+}
+section .text-article ul {
+    list-style: none;
+}
+footer{
+    text-align: center;
+    font-weight: 600;
+}
